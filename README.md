@@ -15,7 +15,7 @@ Wireshark – Packet analysis tool (optional but recommended)
 
 🚦 Part 1: Scan Your Local Network Using Nmap
 
-✅ Step-by-Step Guide
+
 
 
 1. Install Nmap
@@ -24,7 +24,7 @@ Download and install from the official site:
 
 ➡️ https://nmap.org/download.html
 
-Ensure you install the CLI version (and optionally Zenmap GUI).
+
 
 
 2. Find Your Local IP Range
