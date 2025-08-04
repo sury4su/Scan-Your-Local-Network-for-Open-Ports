@@ -11,9 +11,12 @@ Nmap – Network scanning and port discovery
 
 Wireshark – Packet analysis tool (optional but recommended)
 
+
+
 🚦 Part 1: Scan Your Local Network Using Nmap
 
 ✅ Step-by-Step Guide
+
 
 1. Install Nmap
 
@@ -22,6 +25,7 @@ Download and install from the official site:
 ➡️ https://nmap.org/download.html
 
 Ensure you install the CLI version (and optionally Zenmap GUI).
+
 
 2. Find Your Local IP Range
 
@@ -33,17 +37,16 @@ ipconfig
 
 On macOS/Linux:
 
-
 ifconfig
 
 Note the IPv4 address and subnet mask.
 
 Example: 192.168.181.237 with mask 255.255.255.0 → Subnet: 192.168.181.0/24
 
+
 3. Run the Nmap Scan
 
 Open Command Prompt as Administrator and run:
-
 
 nmap -sS 192.168.181.0/24
 
@@ -56,13 +59,15 @@ Optionally, increase verbosity:
 
 nmap -sS -T4 -v 192.168.181.0/24
 
+
 4. Analyze the Results
 
 Example output:
 
-
 Nmap scan report for 192.168.181.110
+
 PORT   STATE SERVICE
+
 53/tcp open  domain
 
 Nmap scan report for 192.168.181.237
@@ -89,9 +94,12 @@ Ports 135, 139, 445: Common on Windows — for file/printer sharing.
 
 Ports 7070, 8000, 8089: Could be local apps, web servers, or custom services.
 
+
 5. Save Scan Output
 
 nmap -sS 192.168.181.0/24 -oN local_scan.txt
+
+
 
 📡 Part 2: Analyze Network Traffic with Wireshark (Optional)
 ✅ Step-by-Step Guide
