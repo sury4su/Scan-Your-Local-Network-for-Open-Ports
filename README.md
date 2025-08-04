@@ -68,10 +68,14 @@ In another window, run your nmap scan. Wireshark will capture all related traffi
 4. Use Display Filters
 Some useful filters:
 
-Purpose	Filter
+Purpose	of filters :
+
 Show TCP traffic- tcp
+
 Filter specific IP- ip.addr == 192.168.181.237
+
 Only SYN packets-	tcp.flags.syn == 1 && tcp.flags.ack == 0
+
 Show DNS traffic- dns
 
 5. Stop and Save Capture
@@ -79,13 +83,18 @@ Click the red square (stop button) to stop.
 Save your capture as .pcapng or .pcap file.
 
 ⚠️ Security Notes
-Port	                Risk Description
-135/139/445 	SMB-related; can be exploited if not secured or patched
-7070/8089	    Rarely used; verify they are legitimate
-8000	        Often development-related — restrict to localhost if possible
+
+135/139/445- 	SMB-related; can be exploited if not secured or patched
+
+7070/8089-	    Rarely used; verify they are legitimate
+
+8000-	        Often development-related — restrict to localhost if possible
 
 ✅ Outcome
 *Identified active devices and open ports
+
 *Gained hands-on experience using Nmap and Wireshark
+
 *Learned to interpret basic network-level activity
+
 *Understood basic risks in exposed services
